@@ -2,6 +2,8 @@
 bibliography: bibliography.bib
 #nocite: '@*'
 reference-section-title: Bibl
+nocite: |
+  @book_key, @article_key
 ...
 
 
@@ -28,6 +30,7 @@ reference-section-title: Bibl
 `\index{Citation}`{=latex}
 
 This statement requires citation [@book_key]; this one is more specific [@article_key].
+Direct citations @book_key and @article_key.
 
 
 ### Lists
