@@ -8,11 +8,10 @@ linkcolor: ocre
 citecolor: ocre
 urlcolor: ocre
 cref : true
-title: The Search for a Title1
-subtitle: A Profound Subtitle1
+title: The Search for a Title
+subtitle: A Profound Subtitle
 author:
-- Dr. John Smith1
-- Dr. John Smith2
+- Dr. John Smith
 copyright: |
   Copyright \copyright\ 2013 John Smith\newline
 
