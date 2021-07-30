@@ -1,7 +1,7 @@
 ---
 bibliography: bibliography.bib
 #nocite: '@*'
-reference-section-title: Bibl
+link-citations: true
 nocite: |
   @book_key, @article_key
 ...
