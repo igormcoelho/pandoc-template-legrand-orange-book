@@ -1,9 +1,32 @@
 ---
-bibliography: bibliography.bib
+#bibliography: bibliography.bib  # passing directly with --bibliography (because of 'cref')
 #nocite: '@*'
 link-citations: true
 nocite: |
   @book_key, @article_key
+linkcolor: ocre
+citecolor: ocre
+urlcolor: ocre
+cref : true
+title: The Search for a Title1
+subtitle: A Profound Subtitle1
+author:
+- Dr. John Smith1
+- Dr. John Smith2
+copyright: |
+  Copyright \copyright\ 2013 John Smith\newline
+
+  \noindent \textsc{Published by Publisher}\newline
+
+  \noindent \textsc{book-website.com}\newline
+
+  \noindent Licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License (the "License"). You may not use this file except in compliance with the License. You may obtain a copy of the License at \url{http://creativecommons.org/licenses/by-nc/3.0}. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \textsc{"as is" basis, without warranties or conditions of any kind}, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+  &nbsp;
+released : First printing, March 2013
+linkReferences: true
+nameInLink: true
+toc-own-page: true
 ...
 
 
@@ -278,9 +301,18 @@ Treatment 3 & 0.0009271 & 0.296 \\
 `\index{Figure}`{=latex}
 
 \begin{figure}[h]
-\centering\includegraphics[scale=0.5]{placeholder}
+\centering\includegraphics[width=0.5\textwidth]{placeholder}
 \caption{Figure caption}
 \end{figure}
+
+
+Use command `![Test Figure](Pictures/placeholder.jpg){#fig:testfig width=50%}` for figure.
+See [Figure @Fig:testfig] below.
+
+![Test Figure](Pictures/placeholder.jpg){#fig:testfig width=50%}
+
+<!-- try also {height=100px} -->
+
 
 ### Example of Link To Section {#sec:example_link}
 `\index{Link to Section}`{=latex}
