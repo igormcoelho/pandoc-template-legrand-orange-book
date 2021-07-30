@@ -14,14 +14,14 @@ reference-section-title: Bibl
 %----------------------------------------------------------------------------------------
 -->
 
-\chapterimage{chapter_head_2.pdf} % Chapter heading image
+\chapterimage{chapter_head_2.pdf} 
 
 ## Text Chapter
 
 ### Paragraphs of Text
 `\index{Paragraphs of Text}`{=latex}
 
-\lipsum[1-7] % Dummy text
+\lipsum[1-7]
 
 
 ### Citation
@@ -247,7 +247,7 @@ Definition of word.
 %----------------------------------------------------------------------------------------
 -->
 
-\chapterimage{chapter_head_1.pdf} % Chapter heading image
+\chapterimage{chapter_head_1.pdf} 
 
 ## Presenting Information
 
