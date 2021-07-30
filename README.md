@@ -54,6 +54,14 @@ Bugfixes are welcome. Open an Issue or PR.
 
 See results in [dist/example.pdf](dist/example.pdf) and [dist/example_noindex.pdf](dist/example_noindex.pdf).
 
+### Build with or without index
+
+There are two build modes:
+- without index: much simpler and pure Pandoc! 
+    * `make noindex`
+- with index: more complicated... using Pandoc to generate .tex file, and then finish work in LaTeX with `makeindex`
+    * `make withindex`
+
 ## License
 
 The Legrand Orange Book from *Mathias Legrand and Vel* is **CC BY-NC-SA 3.0**

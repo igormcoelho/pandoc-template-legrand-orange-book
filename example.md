@@ -1,7 +1,7 @@
 ---
-bibliography: bibliography.bib
+#bibliography: bibliography.bib
 #nocite: '@*'
-suppress-bibliography: true
+#suppress-bibliography: true
 ...
 
 

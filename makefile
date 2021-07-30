@@ -8,10 +8,10 @@ withindex:
 	pdflatex example
 	makeindex example.idx -s StyleInd.ist
 	pdflatex example
-	biber example
-	pdflatex example
-	pdflatex example
-	cp example.pdf dist/example.pdf
+	# biber example
+	# pdflatex example
+	# pdflatex example
+	mv example.pdf dist/example.pdf
 
 clean:
 	rm -f *.log
