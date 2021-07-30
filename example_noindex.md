@@ -36,7 +36,9 @@ Direct citations @book_key and @article_key.
 ### Lists
 `\index{Lists}`{=latex}
 
-Lists are useful to present information in a concise and/or ordered way\footnote{Footnote example...}.
+Lists are useful to present information in a concise and/or ordered way[^mynote].
+
+[^mynote]: Footnote example...
 
 #### Numbered List
 `\index{Lists!Numbered List}`{=latex}
