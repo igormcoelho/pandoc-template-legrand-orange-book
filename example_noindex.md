@@ -45,7 +45,7 @@ toc-own-page: true
 ### Paragraphs of Text
 `\index{Paragraphs of Text}`{=latex}
 
-\lipsum[1-7]
+\lipsum[1-6]
 
 
 ### Citation
@@ -65,6 +65,7 @@ Lists are useful to present information in a concise and/or ordered way[^mynote]
 #### Numbered List
 `\index{Lists!Numbered List}`{=latex}
 
+On `\LaTeX~`{=latex} this is `\begin{enumerate}`:
 
 1. The first item
 1. The second item
@@ -73,6 +74,7 @@ Lists are useful to present information in a concise and/or ordered way[^mynote]
 #### Bullet Points
 `\index{Lists!Bullet Points}`{=latex}
 
+On `\LaTeX~`{=latex} this is `\begin{itemize}`:
 
 - The first item
 - The second item
@@ -81,11 +83,7 @@ Lists are useful to present information in a concise and/or ordered way[^mynote]
 #### Descriptions and Definitions
 `\index{Lists!Descriptions and Definitions}`{=latex}
 
-\begin{description}
-\item[Name] Description
-\item[Word] Definition
-\item[Comment] Elaboration
-\end{description}
+On `\LaTeX~`{=latex} this is `\begin{description}`:
 
 Name
 
