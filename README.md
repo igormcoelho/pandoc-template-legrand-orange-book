@@ -20,14 +20,17 @@ This is a very experimental version, not compared with `eisvogel` official tex t
 
 Organization is:
 - [orangelegrand.latex](./orangelegrand.latex) : adjusted template
-- [example.md](./example.md) : example of book (including index)
 - [example_noindex.md](./example_noindex.md) : example of book (without index)
-- [dist/example.pdf] : output of pandoc+makeindex generation (including index)
-- [dist/example_noindex.pdf] : output of pure pandoc generation (no index)
+    * [dist/example_noindex.pdf](./dist/example_noindex.pdf) : output of pure pandoc generation (no index)
+- [example.md](./example.md) : example of book (including index) - depends on `example_noindex.md`
+    * [dist/example.pdf](./dist/example.pdf) : output of pandoc+makeindex generation (including index)
 - [references.bib](./references.bib) : references in bibtex format
 - [StyleInd.ist](./StyleInd.ist) : index style (only when building index)
-- Pictures folder: original pictures from Legrand template
+- `Pictures` folder: original pictures from Legrand template
 - [makefile](./makefile) : commands in GNU make to build pdfs
+   * `make noindex` : builds simpler version without index
+   * `make withindex` : builds complete version with index
+   * `make`: builds both indexed and non-indexed versions
 
 Many things may need adjustments inside latex template itself.
 
