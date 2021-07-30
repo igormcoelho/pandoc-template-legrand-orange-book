@@ -697,7 +697,7 @@ $endif$
 % ----------------------- workaround -----------
 \noindent $copyright$
 
-\noindent \textit{$released$} % Printing/edition date
+\noindent \textit{$released$} \textit{$date$} % Printing/edition date
 % ------------------------------------------------
 
 %----------------------------------------------------------------------------------------
