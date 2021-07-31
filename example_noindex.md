@@ -27,19 +27,20 @@ date: March 2013
 linkReferences: true
 nameInLink: true
 toc-own-page: true
+listings: true
 ...
 
 
 
 # Part One
 
-<!-- 
+<!--
 %----------------------------------------------------------------------------------------
 %	CHAPTER 1
 %----------------------------------------------------------------------------------------
 -->
 
-\chapterimage{chapter_head_2.pdf} 
+\chapterimage{chapter_head_2.pdf}
 
 ## Text Chapter
 
@@ -99,7 +100,8 @@ Comment
 : Elaboration
 
 
-<!-- 
+
+<!--
 %----------------------------------------------------------------------------------------
 %	CHAPTER 2
 %----------------------------------------------------------------------------------------
@@ -131,7 +133,7 @@ In $E=\mathbb{R}^n$ all norms are equivalent. It has the properties:
 This is a theorem consisting of just one line.
 
 \begin{theorem}
-A set $\mathcal{D}(G)$ in dense in $L^2(G)$, $|\cdot|_0$. 
+A set $\mathcal{D}(G)$ in dense in $L^2(G)$, $|\cdot|_0$.
 \end{theorem}
 
 
@@ -159,7 +161,7 @@ Given an open subset $G$ of $\mathbb{R}^n$, the set of functions $\varphi$ are:
 \item Bounded support $G$;
 \item Infinitely differentiable;
 \end{enumerate}
-a vector space is denoted by $\mathcal{D}(G)$. 
+a vector space is denoted by $\mathcal{D}(G)$.
 \end{notation}
 
 
@@ -202,8 +204,8 @@ It has the properties:
 #### Single Line
 `\index{Propositions!Single Line}`{=latex}
 
-\begin{proposition} 
-Let $f,g\in L^2(G)$; if $\forall \varphi\in\mathcal{D}(G)$, $(f,\varphi)_0=(g,\varphi)_0$ then $f = g$. 
+\begin{proposition}
+Let $f,g\in L^2(G)$; if $\forall \varphi\in\mathcal{D}(G)$, $(f,\varphi)_0=(g,\varphi)_0$ then $f = g$.
 \end{proposition}
 
 
@@ -259,7 +261,7 @@ Define a word to improve a students' vocabulary.
 Definition of word.
 \end{vocabulary}
 
-<!-- 
+<!--
 %----------------------------------------------------------------------------------------
 %	PART
 %----------------------------------------------------------------------------------------
@@ -267,13 +269,13 @@ Definition of word.
 
 # Part Two
 
-<!-- 
+<!--
 %----------------------------------------------------------------------------------------
 %	CHAPTER 3
 %----------------------------------------------------------------------------------------
 -->
 
-\chapterimage{chapter_head_1.pdf} 
+\chapterimage{chapter_head_1.pdf}
 
 ## Presenting Information
 
@@ -311,6 +313,27 @@ See [Figure @Fig:testfig] below.
 
 <!-- try also {height=100px} -->
 
+### Code Listings
+
+~~~{label=lst:captionAttr .html .numberLines  caption="test caption"}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Store</title>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
+~~~
+
+```{.cpp}
+auto x = 10;
+printf("hello, world\n");
+```
+
+See [@Lst:captionAttr] above.
 
 ### Example of Link To Section {#sec:example_link}
 `\index{Link to Section}`{=latex}
@@ -322,8 +345,3 @@ See [Figure @Fig:testfig] below.
 
 ::: {#refs}
 :::
-
-
-
-
-
