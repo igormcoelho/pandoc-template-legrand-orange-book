@@ -10,6 +10,7 @@ urlcolor: ocre
 cref : true
 title: The Search for a Title
 subtitle: A Profound Subtitle
+lang: en
 author:
 - Dr. John Smith
 copyright: |
@@ -24,6 +25,7 @@ copyright: |
   &nbsp;
 released : First printing,
 date: March 2013
+dedication: This is a dedication...
 linkReferences: true
 nameInLink: true
 toc-own-page: true
@@ -334,6 +336,26 @@ printf("hello, world\n");
 ```
 
 See [@Lst:captionAttr] above.
+
+### Admonitions
+
+We put `\usepackage{awesomebox}` in template. You can use like this `\begin{importantblock}`:
+
+\begin{importantblock}
+This is important!
+\end{importantblock}
+
+Other options:
+
+```
+\notebox{Lorem ipsum...}
+\tipbox{Lorem ipsum...}
+\warningbox{}
+\cautionbox{Lorem ipsum...}
+\importantbox{Lorem ipsum...}
+```
+
+See more in: https://git.umaneti.net/latex-awesomebox/plain/awesomebox.pdf
 
 ### Example of Link To Section {#sec:example_link}
 `\index{Link to Section}`{=latex}

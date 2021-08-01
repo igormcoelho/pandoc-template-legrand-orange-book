@@ -14,4 +14,12 @@ withindex:
 	mv example.pdf dist/example.pdf
 
 clean:
+	rm -f *.aux
+	rm -f *.bcf
+	rm -f *.idx
+	rm -f *.ilg
+	rm -f *.ind
 	rm -f *.log
+	rm -f *.ptc
+	rm -f *.run.xml
+	rm -f *.toc

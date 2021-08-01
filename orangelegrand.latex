@@ -100,7 +100,7 @@ $endif$
 
 \usepackage{tikz} % Required for drawing custom shapes
 
-\usepackage[english]{babel} % English language/hyphenation
+\usepackage[$for(babel-otherlangs)$$babel-otherlangs$,$endfor$main=$babel-lang$]{babel} % English language/hyphenation
 
 \usepackage{enumitem} % Customize lists
 \setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
@@ -121,6 +121,16 @@ $endif$
 \usepackage{microtype} % Slightly tweak font spacing for aesthetics
 \usepackage[utf8]{inputenc} % Required for including letters with accents
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+
+% ----------------------- workaround admonition
+\usepackage{awesomebox}
+% https://git.umaneti.net/latex-awesomebox/plain/awesomebox.pdf
+% \notebox{Lorem ipsum...}
+% \tipbox{Lorem ipsum...}
+% \warningbox{}
+% \cautionbox{Lorem ipsum...}
+% \importantbox{Lorem ipsum...}
+
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY AND INDEX
@@ -639,6 +649,9 @@ $endif$
 
 % ------------- workaround CleverRef (must come after Hyperref)
 \usepackage[nameinlink]{cleveref} % nameInLink used on pandoc-crossref too (see cref option too)
+%
+%
+\crefformat{part}{Part #2\MakeUppercase{#1}#3}
 % ------------- end workaround
 
 
@@ -741,8 +754,24 @@ $endif$
 % ----------------------- workaround -----------
 \noindent $copyright$
 
-\noindent \textit{$released$} \textit{$date$} % Printing/edition date
+\noindent \textit{$releasedhash$}  \textit{$released$} \textit{$date$} % Printing/edition date
 % ------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	DEDICATION
+%----------------------------------------------------------------------------------------
+
+\newenvironment{dedication}
+    {\vspace{6ex}\hspace*{\fill}\begin{em}}
+    {\par\end{em}}
+
+\newpage
+~\vfill
+\thispagestyle{empty}
+
+\begin{dedication}
+$dedication$
+\end{dedication}
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
@@ -801,3 +830,4 @@ $body$
 %----------------------------------------------------------------------------------------
 
 \end{document}
+
