@@ -3,6 +3,8 @@
 
 This Pandoc book template aims to simplify the creation of books inspired by Legrand template in LaTeX.
 
+![demo](./dist/demo.png)
+
 ## About original LaTeX template
 
 From [Overleaf](https://www.overleaf.com/latex/templates/the-legrand-orange-book-template-english/jtctyfmnpppc):
