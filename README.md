@@ -1,7 +1,7 @@
 # pandoc-template-legrand-orange-book
 [The Legrand Orange Book](https://www.latextemplates.com/template/the-legrand-orange-book) template in Pandoc/LaTeX.
 
-This Pandoc book template aims to simplify the creation of books inspired by Legrand template in LaTeX.
+This Pandoc book template aims to simplify the creation of books inspired by Legrand template in LaTeX ([Demo PDF](./dist/example.pdf)).
 
 ![demo](./dist/demo.png)
 
